@@ -11,3 +11,298 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.Header{
+  background-color: gray;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+h1{
+  font-size: 1.5rem;
+}
+
+.Header button{
+  border: none;
+  outline: none;
+  background-color: none;
+}
+
+button .carticon{
+  font-size: 1.3rem;
+  color: white;
+  background-color: gray;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.carticon:hover{
+  color: rgb(214, 212, 212);
+}
+
+.cart-container{
+  padding: 1rem;
+}
+
+.cart-container span{
+  padding-left: 0.4rem;
+}
+
+.product-container{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 0.5rem;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.product{
+  width: 30%;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  margin: 0.5rem;
+  cursor: pointer;
+
+}
+
+img{
+  width: 150px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.product-desc{
+  width: 100%;
+  font-size: 1rem;
+  font-style: bold;
+  margin: 0.5rem 0;
+}
+.price-desc{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0.5rem 0;
+  color: green;
+}
+
+.rating{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0.7rem 0;
+}
+
+.rating button{
+  background-color: rgba(0, 128, 0, 0.8);
+  color: white;
+  padding: 0.5rem 0.9rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.rating button:hover{
+  background-color: rgba(255, 115, 0, 0.833);
+  
+}
+
+.search{
+  position: relative;
+  width: 400px;
+  margin: 0.5rem 0;
+}
+
+
+.search-icon{
+  position: absolute;
+  top: 15px;
+  left: 350px;
+  color: black;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.cartpage{
+  width: 90%;
+  margin: auto;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.cartContainer{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.1rem;
+  margin: 0.2rem 0;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+}
+
+.cartContainer .cart-img{
+  height: 100px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+
+.cart-img button{
+  height: 30px;
+  width: 50px;
+  background-color: rgba(0, 128, 0, 0.818);
+  color: white;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+
+.cart-img button:hover{
+  background-color: rgba(255, 115, 0, 0.833);
+}
+
+.cart-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cart-desc{
+  display: flex;
+  align-items: center;
+  text-align: left;
+  width: 30%;
+
+}
+
+.cart-price{
+  width: 30%;
+  text-align: right;
+  padding-right: 1rem;
+}
+
+.pricecalculation{
+  width: 100%;
+  padding: 1rem;
+  margin: 0.2rem 0;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+}
+
+.pricecalculation h2{
+  margin-bottom: 0.5rem;
+}
+
+.total-cal, .total-disc, .ship-price, .total-cost{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+
+.checkout{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 1rem 0;
+}
+.checkout button{
+  padding: 0.5rem 1rem;
+  background-color: rgba(0, 128, 0, 0.818);
+  color: white;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.checkout button:hover{
+  background-color: rgba(255, 115, 0, 0.833);
+}
+
+@media(max-width:500px){
+
+  .product-container{
+    margin-top: 145px;
+  }
+  .product{
+    width: 100%;
+  }
+
+  .logo{
+    width: 100%;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  h1{
+    font-size: 1.3rem;
+  }
+
+  .search{
+    width: 85%;
+    margin: auto;
+  }
+
+  .search-icon{
+    top: 17px;
+    left: 285px;
+  }
+
+  .cart-container{
+    width: 85%;
+    margin: auto;
+  }
+
+  .cartpage{
+    margin-top: 165px;
+  }
+  .cartContainer .cart-img{
+    width: 95%;
+  }
+  .cart-desc{
+    width: 95%;
+    text-align: center;
+    margin: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
+  }
+  .cart-price{
+    width: 95%;
+    text-align: center;
+    margin-bottom: 0.3rem;  }
+}
+
+@media (max-width:375px){
+  .search-icon{
+    left: 250px;
+  }
+}
